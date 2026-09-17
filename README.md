@@ -22,18 +22,18 @@ machine.
 
 ## Build the image
 
-\`\`\`bash
+```bash
 git clone https://github.com/<your-username>/ngs-variant-calling.git
 cd ngs-variant-calling
 docker build -t ngs-tools .
-\`\`\`
+```
 
 ## Run it
 
-\`\`\`bash
+```bash
 mkdir -p ~/ngs-data
 docker run -it --rm -v ~/ngs-data:/data ngs-tools bash
-\`\`\`
+```
 
 Any files placed in `~/ngs-data` on your host machine are available inside
 the container at `/data`.
@@ -67,7 +67,7 @@ variants for the sample, along with their predicted gene/protein effects.
 
 ## Project structure
 
-\`\`\`
+```
 ngs-variant-calling/
 ├── Dockerfile
 ├── README.md
@@ -75,7 +75,7 @@ ngs-variant-calling/
 ├── .dockerignore
 └── pipeline/
     └── run.sh
-\`\`\`
+```
 
 ## License
 
