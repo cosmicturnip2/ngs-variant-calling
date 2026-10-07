@@ -2,8 +2,6 @@
 # Full pipeline: from raw FASTQ through functionally annotated variant calls.
 # Run this inside the container (see README for how to start one).
 
-set -euo pipefail
-
 REF="/data/hg38.fa"
 KNOWN_SITES="/data/hg38_v0_Homo_sapiens_assembly38.dbsnp138.vcf"
 DATA_SOURCES="/data/funcotator_dataSources.v1.8.hg38.20230908g/"
